@@ -16,7 +16,7 @@ I have used the robo-nd VM  to run this project.
 
 * Clone this repository to your home directory:
 ```sh
-$ git clone https://github.com/mkhuthir/RoboND-Kinematics-Project.git ~/catkin_ws 
+$ git clone https://github.com/AhmdNassar/Robotic-Arm-Pick-Place.git ~/catkin_ws 
 ```
 
 * As this project uses custom Gazebo 3D models, we need to add the path through environment variable: 
