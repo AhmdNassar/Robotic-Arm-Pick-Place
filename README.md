@@ -2,17 +2,17 @@
 # Robotic arm - Pick & Place project
 
 ## Contents :
-1. Introduction
+1. Setting up the environment
 2. Installation
 3. Forward Kinemtaics
 4. Inverse Kinematics
-
+5. Screenshots
 
 # 1- Setting up the environment:
 
 I have used the robo-nd VM  to run this project.
 
-### installation steps:
+# 2- installation steps:
 
 * Clone this repository to your home directory:
 ```sh
@@ -71,7 +71,7 @@ $ rosrun kuka_arm safe_spawner.sh
 $ rosrun kuka_arm IK_server.py 
 ```
 
-# 2 - Forward Kinematic Analysis
+# 3 - Forward Kinematic Analysis
 We use the forward kinematics to calculate the final coordinate position and rotation of end-effector
 
 ## 1 - Extracting joint positions and orientations from URDF file.
@@ -123,7 +123,7 @@ s = {alpha0:     0,  a0:     0,  d1:   0.75,
      alpha6:     0,  a6:     0,  d7:  0.303, q7:     0}
 ```
 
-## 3 -Creating the individual transformation matrices about each joint
+## 4 -Creating the individual transformation matrices about each joint
 to describe the relative translation and orientation of link (i-1) to link (i)
 
 ![T1](misc_images/T1.png)
@@ -268,7 +268,7 @@ theta_4 = atan2(R3_6[2, 2], -R3_6[0, 2])
 theta_5 = atan2(sqrt(R3_6[0, 2]*R3_6[0, 2]+R3_6[2, 2]*R3_6[2, 2]), R3_6[1, 2])
 theta_6 = atan2(-R3_6[1, 1], R3_6[1, 0])
 ```
-# 4 - Screenshots 
+# 5 - Screenshots 
 ![plan_to_target](misc_images/misc4.jpg)
 
 ![reached](misc_images/misc5.jpg)
