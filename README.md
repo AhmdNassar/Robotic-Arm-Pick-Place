@@ -4,7 +4,7 @@
 ## Contents :
 1. Setting up the environment
 2. Installation
-3. Forward Kinemtaics
+3. Forward Kinematics
 4. Inverse Kinematics
 5. Screenshots
 
